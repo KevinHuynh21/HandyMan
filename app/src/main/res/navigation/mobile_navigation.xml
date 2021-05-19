@@ -23,4 +23,11 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.HandyMan.ui.profile.HandyManProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/handy_man_profile_fragment"
+        />
+
 </navigation>

@@ -22,4 +22,13 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="menu_logout">LogOut</string>
+    <string name="menu_profile">Profile</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="company">Company</string>
+    <string name="years_of_experience">Years Of Experience</string>
+    <string name="description">Description</string>
+    <string name="phonenumber">PhoneNumber</string>
+    <string name="email">Email</string>
+    <string name="save_profile">Save Profile</string>
 </resources>

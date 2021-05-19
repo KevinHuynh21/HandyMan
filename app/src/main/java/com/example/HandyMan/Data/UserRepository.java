@@ -9,8 +9,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class UserRepository {
         private final UserLiveData currentUser;
-        private final Application app;
         private static UserRepository instance;
+        private final Application app;
 
         private UserRepository(Application app) {
             this.app = app;
@@ -23,13 +23,15 @@ public class UserRepository {
             return instance;
         }
 
+    public void signOut() {
+        AuthUI.getInstance()
+                .signOut(app.getApplicationContext());
+    }
+
         public LiveData<FirebaseUser> getCurrentUser() {
             return currentUser;
         }
 
-        public void signOut() {
-            AuthUI.getInstance()
-                    .signOut(app.getApplicationContext());
-        }
+
 }
 

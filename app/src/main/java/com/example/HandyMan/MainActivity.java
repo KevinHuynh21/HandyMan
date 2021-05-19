@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewmodel = new ViewModelProvider(this).get(MainActivityViewModel.class);
+        viewmodel.init();
         checkIfSignedIn();
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

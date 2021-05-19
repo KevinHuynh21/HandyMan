@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
         if (resultCode == RESULT_OK)
             goToMainActivity();
         else
-            Toast.makeText(this, "SIGN IN CANCELLED", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show();
     }
     }
 
