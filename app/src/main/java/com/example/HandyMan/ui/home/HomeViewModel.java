@@ -1,19 +1,14 @@
 package com.example.HandyMan.ui.home;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
+import android.app.Application;
 
-public class HomeViewModel extends ViewModel {
+import androidx.lifecycle.AndroidViewModel;
 
-    private MutableLiveData<String> mText;
+public class HomeViewModel extends AndroidViewModel {
 
-    public HomeViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+
+    public HomeViewModel(Application application) {
+        super(application);
     }
 
-    public LiveData<String> getText() {
-        return mText;
-    }
 }

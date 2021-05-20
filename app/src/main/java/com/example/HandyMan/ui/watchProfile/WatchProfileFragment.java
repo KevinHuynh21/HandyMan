@@ -2,6 +2,7 @@ package com.example.HandyMan.ui.watchProfile;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,11 +12,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.HandyMan.Data.Profile;
+import com.example.HandyMan.MainActivity;
 import com.example.HandyMan.R;
+import com.example.HandyMan.ui.chat.ChatActivity;
 
 public class WatchProfileFragment extends Fragment {
 
@@ -30,6 +34,7 @@ public class WatchProfileFragment extends Fragment {
         TextView description = view.findViewById(R.id.description);
         TextView phoneNumber = view.findViewById(R.id.phoneNumber);
         TextView email = view.findViewById(R.id.email);
+        Button chat = view.findViewById(R.id.button2);
         Profile profile = watchProfileViewModel.getProfileFromModel();
         if(profile != null)
         {
@@ -39,7 +44,14 @@ public class WatchProfileFragment extends Fragment {
             phoneNumber.setText(String.valueOf(profile.getPhoneNumber()));
             email.setText(profile.getEmail());
         }
+        chat.setOnClickListener(v -> {
+            goToChatActivity();
+        });
         return view;
+    }
+
+    private void goToChatActivity() {
+        startActivity(new Intent(getContext(), ChatActivity.class));
     }
 
 }

@@ -27,6 +27,12 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.HandyMan.NoActionBar">
         </activity>
+
+        <activity
+            android:name=".ui.chat.ChatActivity"
+            android:label="Chat">
+        </activity>
+
     </application>
 
 </manifest>
