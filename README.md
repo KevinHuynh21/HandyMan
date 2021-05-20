@@ -13,22 +13,31 @@ Idé: Idéen er en app, hvor man kan finde forskellige profiler på Håndværker
 
 MOSCOW Must Have: 
 1. Denne app skal have profiler omkring de forskellige håndværkere og/eller deres firmaer, hvor man kan finde data omkring dem, som deres lokation, deres arbejde og kontaktinfo mm.
+
+
 Endelig:
 **Denne app har profiler omkring de forskellige håndværkere og deres firmaer, hvor man kan finde data omkring dem, ikke deres lokation, men deres arbejde og kontaktinfo.
 Krav Opfyldt, undtagen man ikke kan se deres lokation.**
 
 2. Man skal kunne søge efter håndværkere og/eller deres firmaer inden for et specifikt geografisk område
+
+
 Endelig:
 **Krav ikke opfyldt, man kan ikke søge efter dem inden for et specifikt geografisk område, som sagt fik jeg ikke google maps API implementeret, da jeg stødte på nogle problemer og ikke kunne nå det før deadline.**
 
 Should Have: 
+
 3. Appen burde have en funktion, til at man kan chatte med de forskellige håndværkere og/eller deres firmaer.
+4. 
 Endelig:
 **Appen har en funktion til at kunne chatte med de forskellige håndværkere og/eller deres firmaer.
 Krav Opfyldt**
 
 Could Have: 
+
 4. Appen kunne måske have en funktion til at kunne booke de forskellige håndværkere og/eller firmaer i dage/uger/måneder, i forhold til en kalender som de nu har, så man kan se hvornår de kan bookes.
+
+
 Endelig:
 **jeg har ikke fået lavet en kalender til at man kan booke håndværkere og/eller firmaer, men man kan stadigvæk aftale bookings og tider over chatten til gengæld**
 
