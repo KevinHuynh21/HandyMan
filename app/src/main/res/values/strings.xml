@@ -37,4 +37,7 @@
     <string name="microphone">microphone</string>
     <string name="input">Input</string>
     <string name="chat">Chat</string>
+    <string name="logo">logo</string>
+    <string name="handymanapp">HandyManApp</string>
+    <string name="kevin_studie_outlook_dk">Kevin.Studie@outlook.dk</string>
 </resources>

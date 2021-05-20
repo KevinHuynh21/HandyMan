@@ -52,8 +52,6 @@ public class GalleryFragment extends Fragment implements GalleryAdapter.OnItemCl
 
     @Override
     public void onItemClick(int IndexOfClickedItem) {
-        String nameAndCom = list.get(IndexOfClickedItem).getName() + list.get(IndexOfClickedItem).getCompany();
-        Toast.makeText(getContext(), nameAndCom, Toast.LENGTH_SHORT).show();
         galleryViewModel.getAllProfiles().observe(getViewLifecycleOwner(), profiles -> {
             if(profiles != null)
             {
