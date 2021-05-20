@@ -5,7 +5,7 @@ import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.HandyMan.Data.UserRepository;
+import com.example.HandyMan.Repositories.UserRepository;
 import com.google.firebase.auth.FirebaseUser;
 
 public class ChatActivityViewModel extends AndroidViewModel {

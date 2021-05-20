@@ -6,6 +6,7 @@ public class Profile {
     private String description;
     private int phoneNumber;
     private String email;
+
     public Profile()
     {
     }

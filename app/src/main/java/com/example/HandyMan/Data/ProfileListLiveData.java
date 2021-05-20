@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProfileListLiveData extends LiveData<List<Profile>> {
+
     DatabaseReference databaseReference;
     private ArrayList<Profile> list = new ArrayList<>();
     private final ValueEventListener listener = new ValueEventListener() {

@@ -5,9 +5,8 @@ import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.HandyMan.Data.Profile;
-import com.example.HandyMan.Data.ProfileRepository;
-import com.example.HandyMan.Data.UserRepository;
+import com.example.HandyMan.Repositories.ProfileRepository;
+import com.example.HandyMan.Repositories.UserRepository;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivityViewModel extends AndroidViewModel {

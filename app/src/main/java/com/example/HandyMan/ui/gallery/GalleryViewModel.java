@@ -6,7 +6,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import com.example.HandyMan.Data.Profile;
-import com.example.HandyMan.Data.ProfileRepository;
+import com.example.HandyMan.Repositories.ProfileRepository;
 
 import java.util.List;
 

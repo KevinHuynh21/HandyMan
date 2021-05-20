@@ -15,7 +15,6 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.HandyMan.MainActivity;
 import com.example.HandyMan.Model.ModelClass;
 import com.example.HandyMan.R;
-import com.example.HandyMan.ui.login.LoginActivityViewModel;
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -28,6 +27,7 @@ public class ChatActivity extends AppCompatActivity {
     private FirebaseListAdapter<ModelClass> adapter;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         database = FirebaseDatabase.getInstance();
@@ -44,7 +44,6 @@ public class ChatActivity extends AppCompatActivity {
                         chatActivityViewModel.getCurrentUser().getValue().getDisplayName()));
                 input.setText("");
             }
-
         });
         displayChat();
     }

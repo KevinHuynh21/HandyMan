@@ -2,7 +2,6 @@ package com.example.HandyMan.Model;
 
 
 import com.example.HandyMan.Data.Profile;
-import com.example.HandyMan.Data.ProfileRepository;
 
 import java.util.Date;
 

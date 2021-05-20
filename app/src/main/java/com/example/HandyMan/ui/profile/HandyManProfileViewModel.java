@@ -2,13 +2,11 @@ package com.example.HandyMan.ui.profile;
 
 import android.app.Application;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.ViewModel;
 
 import com.example.HandyMan.Data.Profile;
-import com.example.HandyMan.Data.ProfileRepository;
+import com.example.HandyMan.Repositories.ProfileRepository;
 
 public class HandyManProfileViewModel extends AndroidViewModel {
     private final ProfileRepository profileRepository;

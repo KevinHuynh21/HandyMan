@@ -1,5 +1,8 @@
-package com.example.HandyMan.Data;
+package com.example.HandyMan.Repositories;
 
+import com.example.HandyMan.Data.Profile;
+import com.example.HandyMan.Data.ProfileListLiveData;
+import com.example.HandyMan.Data.ProfileLiveData;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -8,7 +11,7 @@ public class ProfileRepository {
     private FirebaseDatabase database;
     private DatabaseReference myRef;
     private DatabaseReference myRefList;
-    private ProfileLiveData  profileLiveData;
+    private ProfileLiveData profileLiveData;
     private ProfileListLiveData profileListLiveData;
 
 

@@ -5,7 +5,7 @@ import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 
 import com.example.HandyMan.Data.Profile;
-import com.example.HandyMan.Data.ProfileRepository;
+import com.example.HandyMan.Repositories.ProfileRepository;
 import com.example.HandyMan.Model.ModelClass;
 
 

@@ -1,9 +1,10 @@
-package com.example.HandyMan.Data;
+package com.example.HandyMan.Repositories;
 
 import android.app.Application;
 
 import androidx.lifecycle.LiveData;
 
+import com.example.HandyMan.Data.UserLiveData;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseUser;
 
