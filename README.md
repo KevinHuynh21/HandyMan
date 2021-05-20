@@ -28,7 +28,8 @@ Endelig:
 Should Have: 
 
 3. Appen burde have en funktion, til at man kan chatte med de forskellige håndværkere og/eller deres firmaer.
-4. 
+
+
 Endelig:
 **Appen har en funktion til at kunne chatte med de forskellige håndværkere og/eller deres firmaer.
 Krav Opfyldt**
