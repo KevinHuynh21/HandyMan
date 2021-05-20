@@ -39,5 +39,11 @@
     <string name="chat">Chat</string>
     <string name="logo">logo</string>
     <string name="handymanapp">HandyManApp</string>
+    <string name="contact_us">Contact us</string>
+    <string name="back">back</string>
+    <string name="send_email">Send Email</string>
+    <string name="call">Call</string>
+    <string name="_11223344">11223344</string>
     <string name="kevin_studie_outlook_dk">Kevin.Studie@outlook.dk</string>
+    <string name="_20625133">20625133</string>
 </resources>

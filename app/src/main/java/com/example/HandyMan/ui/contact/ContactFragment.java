@@ -1,4 +1,4 @@
-package com.example.HandyMan.ui.home;
+package com.example.HandyMan.ui.contact;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,13 +9,13 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.HandyMan.R;
 
-public class HomeFragment extends Fragment {
+public class ContactFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private ContactViewModel contactViewModel;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        contactViewModel = new ViewModelProvider(this).get(ContactViewModel.class);
+        View view = inflater.inflate(R.layout.fragment_contact, container, false);
         return view;
     }
 }

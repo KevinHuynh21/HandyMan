@@ -1,15 +1,18 @@
 package com.example.HandyMan.ui.chat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.HandyMan.MainActivity;
 import com.example.HandyMan.Model.ModelClass;
 import com.example.HandyMan.R;
 import com.example.HandyMan.ui.login.LoginActivityViewModel;
@@ -60,5 +63,14 @@ public class ChatActivity extends AppCompatActivity {
             }
         };
         listView.setAdapter(adapter);
+        ImageView back = findViewById(R.id.back);
+        back.setOnClickListener(v -> {
+            goToMainActivity();
+        });
+    }
+
+    private void goToMainActivity() {
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 }

@@ -1,14 +1,9 @@
 package com.example.HandyMan.ui.profile;
 
-import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -21,8 +16,6 @@ import android.widget.Toast;
 import com.example.HandyMan.Data.Profile;
 import com.example.HandyMan.MainActivity;
 import com.example.HandyMan.R;
-import com.example.HandyMan.ui.home.HomeFragment;
-import com.example.HandyMan.ui.login.LoginActivityViewModel;
 
 public class HandyManProfileFragment extends Fragment {
 
@@ -63,7 +56,7 @@ public class HandyManProfileFragment extends Fragment {
             profile.setEmail(email.getText().toString().trim());
             handyManProfileViewModel.saveProfile(profile);
             Toast.makeText(getContext(), "Your Profile is saved", Toast.LENGTH_SHORT).show();
-            MainActivity.navController.navigate(R.id.nav_home);
+            MainActivity.navController.navigate(R.id.nav_gallery);
         });
         return view;
     }
