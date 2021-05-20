@@ -1,5 +1,6 @@
 package com.example.HandyMan.ui.profile;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -20,15 +21,13 @@ import android.widget.Toast;
 import com.example.HandyMan.Data.Profile;
 import com.example.HandyMan.MainActivity;
 import com.example.HandyMan.R;
+import com.example.HandyMan.ui.home.HomeFragment;
 import com.example.HandyMan.ui.login.LoginActivityViewModel;
 
 public class HandyManProfileFragment extends Fragment {
 
     private HandyManProfileViewModel mViewModel;
 
-    public static HandyManProfileFragment newInstance() {
-        return new HandyManProfileFragment();
-    }
     private HandyManProfileViewModel handyManProfileViewModel;
 
     @Override
@@ -47,7 +46,6 @@ public class HandyManProfileFragment extends Fragment {
         handyManProfileViewModel.getProfile().observe(getViewLifecycleOwner(), profile -> {
             if(profile != null) {
                 profile1.setProfile(profile);
-                Toast.makeText(getContext(), "Vi er her" + profile1.getFullName(), Toast.LENGTH_SHORT).show();
                 fullName.setText(profile1.getFullName());
                 company.setText(profile1.getCompany());
                 description.setText(profile1.getDescription());
@@ -64,6 +62,8 @@ public class HandyManProfileFragment extends Fragment {
             profile.setPhoneNumber(Integer.parseInt(phoneNumber.getText().toString()));
             profile.setEmail(email.getText().toString().trim());
             handyManProfileViewModel.saveProfile(profile);
+            Toast.makeText(getContext(), "Your Profile is saved", Toast.LENGTH_SHORT).show();
+            MainActivity.navController.navigate(R.id.nav_home);
         });
         return view;
     }

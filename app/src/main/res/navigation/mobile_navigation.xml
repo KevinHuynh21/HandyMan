@@ -18,16 +18,17 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.HandyMan.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.HandyMan.ui.profile.HandyManProfileFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/handy_man_profile_fragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_watchProfile"
+        android:name="com.example.HandyMan.ui.watchProfile.WatchProfileFragment"
+        android:label="@string/watch_profile"
+        tools:layout="@layout/watch_profile_fragment"
         />
 
 </navigation>

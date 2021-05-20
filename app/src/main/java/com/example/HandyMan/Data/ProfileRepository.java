@@ -7,7 +7,9 @@ public class ProfileRepository {
     private static ProfileRepository instance;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
+    private DatabaseReference myRefList;
     private ProfileLiveData  profileLiveData;
+    private ProfileListLiveData profileListLiveData;
 
 
     private ProfileRepository(){
@@ -18,7 +20,9 @@ public class ProfileRepository {
     {
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("Profile").child(userId);
+        myRefList = database.getReference("Profile");
         profileLiveData = new ProfileLiveData(myRef);
+        profileListLiveData = new ProfileListLiveData(myRefList);
     }
 
 
@@ -34,6 +38,11 @@ public class ProfileRepository {
 
     public ProfileLiveData getProfile() {
         return profileLiveData;
+    }
+
+    public ProfileListLiveData getAllProfiles()
+    {
+        return profileListLiveData;
     }
 
 

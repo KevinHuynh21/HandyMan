@@ -31,4 +31,7 @@
     <string name="phonenumber">PhoneNumber</string>
     <string name="email">Email</string>
     <string name="save_profile">Save Profile</string>
+    <string name="nameandcompany">Name and Company</string>
+    <string name="profilepicture">profilepicture</string>
+    <string name="watch_profile">watchprofile</string>
 </resources>
