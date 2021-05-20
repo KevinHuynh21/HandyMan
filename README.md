@@ -43,7 +43,9 @@ Endelig:
 **jeg har ikke fået lavet en kalender til at man kan booke håndværkere og/eller firmaer, men man kan stadigvæk aftale bookings og tider over chatten til gengæld**
 
 5. Man kan måske have priserne til at stå på profilerne, men eftersom opgaverne som kunderne gerne vil have lavet kan variere meget, så er det måske bedst at have pris som en ting der bliver aftalt mellem kunde og håndværker.
+
+
 Endelig:
-**Prisen er en ting som man kan aftale mellem kunde og håndværker igennem chatten**
+**Prisen er en ting som man kan aftale mellem kunde og håndværker igennem chatten, Krav Opfyldt**
 
 Wont Have:
